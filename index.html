@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Assignment</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  
+  <div class="outer-wrapper">
+    <div class="container no-gutter">
+      <h3 class="header">SpaceX Launch Programs</h3>
+      <div class="row">
+        <div class="col-12 col-md-4 col-lg-2">
+          <div class="filter">
+            <div class="filter__header">Filter</div>
+            <div class="filter__container">
+              <div class="filter__year">Launch Year</div>
+              <div class="filter__list" id="filters-year">
+                <div class="filter__list--item year">2006</div>
+                <div class="filter__list--item year">2007</div>
+                <div class="filter__list--item year">2008</div>
+                <div class="filter__list--item year">2009</div>
+                <div class="filter__list--item year">2010</div>
+                <div class="filter__list--item year">2011</div>
+                <div class="filter__list--item year">2012</div>
+                <div class="filter__list--item year">2013</div>
+                <div class="filter__list--item year">2014</div>
+                <div class="filter__list--item year">2015</div>
+                <div class="filter__list--item year">2016</div>
+                <div class="filter__list--item year">2017</div>
+                <div class="filter__list--item year">2018</div>
+                <div class="filter__list--item year">2019</div>
+                <div class="filter__list--item year">2020</div>
+              </div>
+            </div>
+
+            <div class="filter__container" id="filter-launch">
+              <div class="filter__year">Succesful Launch</div>
+              <div class="filter__list">
+                <div class="filter__list--item launch">True</div>
+                <div class="filter__list--item launch">False</div>
+              </div>
+            </div>
+
+            <div class="filter__container" id="filter-landing">
+              <div class="filter__year">Succesful Landing</div>
+              <div class="filter__list">
+                <div class="filter__list--item landing">True</div>
+                <div class="filter__list--item landing">False</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-12 col-md-8 col-lg-10">
+          <div class="row" id="products">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <script src="build/app.bundle.js"></script>
+</body>
+</html>

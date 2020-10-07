@@ -1,0 +1,22 @@
+$bg-color: #f2f2f2;
+$color-white: #fff;
+$color-black: #000;
+
+
+$color-light-blue: #51589d;
+
+$filter-active-state: #7cba01;
+$filter-normal-state: #c5e09b;
+
+//Media Variables
+$breakpoint-xs-max: 567px;
+$breakpoint-sm-max: 767px;
+$breakpoint-md-min: 768px;
+$breakpoint-md-max: 1024px;
+
+
+
+//Media Queries
+$breakpoint-xs: "(max-width: #{$breakpoint-xs-max})";
+$breakpoint-sm: "(max-width: #{$breakpoint-sm-max})";
+$breakpoint-md: "(max-width: #{$breakpoint-md-max})";

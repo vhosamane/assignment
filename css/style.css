@@ -1,0 +1,91 @@
+body {
+  background-color: #f2f2f2;
+  color: #000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 12px; }
+
+.outer-wrapper {
+  max-width: 1440px;
+  width: 100%; }
+  @media (max-width: 1024px) {
+    .outer-wrapper {
+      max-width: 100%; } }
+  .outer-wrapper .header {
+    font-size: 40px;
+    margin-bottom: 20px; }
+
+.filter {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px; }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .filter {
+      padding: 20px 10px; } }
+  .filter__header {
+    font-size: 16px;
+    font-weight: bold; }
+    @media (max-width: 567px) {
+      .filter__header {
+        font-size: 28px; } }
+  .filter__container {
+    margin-bottom: 30px; }
+  .filter__year {
+    text-align: center;
+    border-bottom: 1px solid #000;
+    padding: 4px 8px;
+    margin: auto;
+    margin-bottom: 20px; }
+    @media (max-width: 567px) {
+      .filter__year {
+        font-size: 24px;
+        padding-bottom: 10px; } }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .filter__year {
+        padding: 4px 6px; } }
+  .filter__list {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 25%;
+    grid-row-gap: 15px;
+    text-align: center; }
+    .filter__list--item {
+      border-radius: 4px;
+      background-color: #c5e09b;
+      padding: 4px 0;
+      cursor: pointer;
+      border: 1px solid #c5e09b; }
+      .filter__list--item.selected {
+        background: #7cba01; }
+      @media (max-width: 567px) {
+        .filter__list--item {
+          font-size: 24px; } }
+
+.product {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px; }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .product {
+      padding: 20px 10px; } }
+  .product__img {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    background: #f2f2f2; }
+  .product__name {
+    display: block;
+    padding: 10px 0;
+    color: #51589d; }
+    @media (max-width: 567px) {
+      .product__name {
+        font-size: 24px; } }
+  .product__column {
+    display: flex; }
+  @media (max-width: 567px) {
+    .product__text {
+      font-size: 20px; } }
+  @media (max-width: 567px) {
+    .product__value {
+      font-size: 18px; } }
+  .product__mission--list {
+    padding: 6px 0 0 25px; }

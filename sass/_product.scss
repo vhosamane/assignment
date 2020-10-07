@@ -1,0 +1,55 @@
+.product {
+    background: $color-white;
+    padding: 20px;
+    margin-bottom: 20px;
+
+    @media (min-width: $breakpoint-md-min) and (max-width: $breakpoint-md-max) {
+        padding: 20px 10px;
+    }
+
+    &__img {
+        max-width: 100%;
+        width: 100%;
+        display: block;
+        background: $bg-color;
+    }
+
+    &__name {
+        display: block;
+        padding: 10px 0;
+        color: $color-light-blue;
+        @media #{$breakpoint-xs} {
+            font-size: 24px;
+        }
+    }
+
+    &__column {
+        display: flex;
+    }
+
+
+    &__section {
+        @media (min-width: $breakpoint-md-min) and (max-width: $breakpoint-md-max) {
+           
+        }
+    }
+
+    &__text {
+        @media #{$breakpoint-xs} {
+            font-size: 20px;
+        }
+    }
+
+    &__value {
+        @media #{$breakpoint-xs} {
+            font-size: 18px;
+        }
+    }
+
+    &__mission {
+
+        &--list {
+            padding: 6px 0 0 25px;
+        }
+    }
+}
