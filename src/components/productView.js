@@ -13,10 +13,8 @@ export const showProduct = (products) => {
                         <span class="product__name font-weight-bold">${product.mission_name} #${product.flight_number}</span>
                         <div class="product__mission">
                             <span class="product__text font-weight-bold">Mission Ids</span>
-                            <ul class="product__mission--list">
-                                <li>Mission lbs</li>
-                                <li>Mission lbs</li>
-                                <li>Mission lbs</li>
+                            <ul class="product__mission--list" id="mission">
+                                ${productmission(product)}
                             </ul>
                         </div>
                         <div class="product__year">
@@ -37,6 +35,21 @@ export const showProduct = (products) => {
         });
     } else {
         output += `<h3> No Products </h3>`
+    }
+
+    function productmission(product) {
+        let missionid = [];
+        if (product.mission_id.length > 0) {
+            product.mission_id.forEach((id) => {
+                missionid += `
+                    <li>${id}</li>
+                `
+            });
+        } else {
+            missionid = '';
+        }
+        console.log(missionid);
+        return missionid;
     }
 
     selector.product.innerHTML = output;
